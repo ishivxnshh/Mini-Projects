@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python CBT Exam Review</title>
+    <style>
+        body {
+            background: url('/static/stat.jpeg') center/cover no-repeat;
+        }
+        h1 {
+            font-style: italic;
+            background-color: rgb(127, 5, 249);
+            color: rgb(251, 70, 70);
+        }
+
+        form {
+            color: rgb(30, 52, 218);
+        }
+
+        input {
+            background-color: rgb(101, 228, 245);
+        }
+
+        textarea {
+            background-color: coral;
+        }
+
+        ::placeholder{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <pre><h1>Python CBT Exam Review</h1></pre>
+    <form action="/submit" method="POST">
+        <label for="name">NAME:</label>
+        <input type="text" id="name" placeholder="enter name here" name="name"><br><br>
+        <label for="section">SECTION:</label>
+        <input type="text" id="section" placeholder="enter section here" name="section"><br><br>
+        <label for="roll">ROLL NO.:</label>
+        <input type="text" id="roll" placeholder="enter roll no. here" name="roll"><br><br>
+        <label for="year">YEAR:</label>
+        <input type="text" id="year" placeholder="enter year here" name="year"><br><br>
+        <label for="rating">RATING:</label>
+        <select name="rating" id="rating">
+            <option value="5">Excellent</option>
+            <option value="4">Good</option>
+            <option value="3">Average</option>
+            <option value="2">Poor</option>
+            <option value="1">Very Poor</option>
+        </select>
+        <br><br>
+        <label for="feedback">Feedback:</label><br>
+        <textarea placeholder="please give your valuable feedback here" name="feedback" id="feedback" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit">Submit Review</button>
+    </form>
+</body>
+</html>

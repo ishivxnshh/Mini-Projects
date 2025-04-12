@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #C2185B url('rose.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #E91E63;
+        }
+        p {
+            font-size: 1.5em;
+            color: #E91E63;
+        }
+        @media (max-width: 1024px) {
+            body {
+                background-size: contain;
+            }
+        }
+        @media (max-width: 768px) {
+            .content {
+                padding: 15px;
+                width: 80%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Happy Rose Day!</h1>
+        <p>Wishing you a day as lovely as a rose.</p>
+    </div>
+</body>
+</html>

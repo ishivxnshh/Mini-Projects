@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Visual Studio Code - Code Editor</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
 </head>
 
 <body>
-    <div class="top-bar">
+    <nav class="top-bar">
         <div class="nav-left">
-            <img src="download.png" width="24" class="logo">
+            <img src="download.png" width="24" class="logo" alt="VS Code Logo" />
             <span class="title">Visual Studio Code</span>
             <span class="topLink">Docs</span>
             <span class="topLink">Updates</span>
@@ -22,32 +23,35 @@
             <span class="topLink">Learn</span>
         </div>
         <div class="nav-right">
-            <input type="text" placeholder="Search Docs">
+            <input type="text" placeholder="Search Docs" aria-label="Search Documentation" />
             <button>Download</button>
         </div>
-    </div>
+    </nav>
 
-    <br>
+    <section class="announcement">
+        <div style="text-align: center;">
+            <a href="/">📢 Version 1.82</a> is now available! Read about the new features and fixes from July.
+        </div>
+    </section>
 
-    <div style="text-align: center;">
-        <a href="/">📢 Version 1.82</a> is now available! Read about the new features and fixes from July.
-    </div>
-
-    <br>
-
-    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 0 5%;">
-        <div style="max-width: 500px;">
-            <h1>Code with Github Copilot</h1>
-            <h6>Write code faster and smarter with Github Copilot, your AI pair programmer.</h6>
+    <section class="hero">
+    <div class="hero-text">
+        <h1>Code with Github Copilot</h1>
+        <h6>Write code faster and smarter with Github Copilot, your AI pair programmer.</h6>
+        <p>
             Copilot is your AI pair programmer tool in Visual Studio Code.
             Get code suggestions as you type in the editor, or use natural language chat to ask about your code or start
-            an editing session for implementing new feature and fixing bugs.
-        </div>
-        <div>
-            <video src="https://code.visualstudio.com/assets/home/hero-dark-lg.webm"
-                style="width: 100%; max-width: 800px;" controls></video>
-        </div>
+            an editing session for implementing new features and fixing bugs.
+        </p>
     </div>
+    <div class="hero-video">
+        <video
+            src="https://code.visualstudio.com/assets/home/hero-dark-lg.webm"
+            controls
+            aria-label="Github Copilot introduction video"
+        ></video>
+    </div>
+</section>
 </body>
 
 </html>
